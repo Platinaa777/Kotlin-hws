@@ -2,6 +2,7 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+./src/main/kotlin/testing.kt
 
 ### Eclipse ###
 .apt_generated
