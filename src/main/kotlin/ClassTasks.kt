@@ -16,9 +16,6 @@ open class Point(val X: Double, val Y: Double) {
     }
 }
 
-class Circle(val R: Double) : Point {
-
-}
 
 // Используйте эту функцию для запуска кода
 // Раскомментируйте нужные участки в процессе реализации
