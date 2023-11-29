@@ -6,11 +6,18 @@
 fun makeArray(): Array<Int> {
     var list: Array<Int> = arrayOf()
     print("Enter count of number in array: ")
-    var n: Int = readLine()!!.toInt()
+    var count = readlnOrNull()
+    if (count.isNullOrEmpty())
+        return list
+
+    var n: Int = count.toInt()
 
     for (i in 1..n step 1) {
-        var element = readLine()!!.toInt()
-        list += element
+        var stringElement = readlnOrNull()
+        if (stringElement.isNullOrEmpty())
+            return list
+
+        list += stringElement.toInt()
     }
 
     println(list.joinToString())

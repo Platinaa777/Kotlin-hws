@@ -21,23 +21,23 @@ fun askForInput() {
 /**
 Задание 2: Функция, вычисляющая и возвращающая корни квадратного уравнения. (1 балл)
  */
-fun quadraticRoots(a: Double, b: Double, c: Double): Pair<Double, Double> {
+fun quadraticRoots(a: Double, b: Double, c: Double): Pair<Double?, Double?> {
     if (a == 0.0 && b == 0.0) {
-        // maybe throw exception or something like that
-        return 0.0 to 0.0
+        return null to null
     }
 
     if (a == 0.0) {
-        // 1 root but in fun we have strict return type, i just return 0.0 in second root
-        return c/b to 0.0
+        // 1 root but in fun we have strict return type, I just return null in second root
+        return c/b to null
     }
 
-    // -b + sqrt(dis) / 2a
+    // x_i = -b +- sqrt(dis) / 2a
+
     var discriminant = b*b - 4*a*c
     if (discriminant < 0) {
-        // again too strict return value
-        return 0.0 to 0.0
+        return null to null
     }
+
     discriminant = sqrt(discriminant)
     var x1 = (-b + discriminant) / (2.0 * a)
     var x2 = (-b - discriminant) / (2.0 * a)
@@ -52,8 +52,8 @@ fun quadraticRoots(a: Double, b: Double, c: Double): Pair<Double, Double> {
 fun printSameDigitNumbers() {
     // read s
     print("enter number s: ")
-    var s = readLine()
-    if (s == null || s.length < 3) return
+    var s = readlnOrNull()
+    if (s.isNullOrEmpty() || s.length < 3) return
 
     var first = s[0]
     var second = s[1]

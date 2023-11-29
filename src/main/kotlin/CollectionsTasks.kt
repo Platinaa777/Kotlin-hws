@@ -48,9 +48,10 @@ fun uniqueWords(text: String): Int {
 // Используйте эту функцию для запуска кода
 // Раскомментируйте нужные участки в процессе реализации
 fun main() {
-    val text = ""
-    //println(uniqueWords(text))
+    val text = "AB ABA BA BD CC CC 1 1"
+    println(uniqueWords(text))
 
-    // Вызвать для text и вывести результат замены на экран
-    //replaceElements()
+    var replacedList = replaceElements(text.split(' '))
+
+    replacedList.forEach { it -> print(it + " ") };
 }
