@@ -22,9 +22,16 @@ fun askForInput() {
 Задание 2: Функция, вычисляющая и возвращающая корни квадратного уравнения. (1 балл)
  */
 fun quadraticRoots(a: Double, b: Double, c: Double): Pair<Double?, Double?> {
+    if (a == 0.0 && b == 0.0 && c == 0.0) {
+        // if c == 0 all x will be appropriate return min and max of double
+        return Double.MIN_VALUE to Double.MAX_VALUE
+    }
+
     if (a == 0.0 && b == 0.0) {
+        // nothing can be root
         return null to null
     }
+
 
     if (a == 0.0) {
         // 1 root but in fun we have strict return type, I just return null in second root
