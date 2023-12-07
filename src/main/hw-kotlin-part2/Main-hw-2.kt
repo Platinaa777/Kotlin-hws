@@ -1,5 +1,4 @@
 import kotlin.random.Random
-import kotlin.random.nextUInt
 
 
 fun main(args: Array<String>) {
