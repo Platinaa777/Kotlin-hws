@@ -5,6 +5,7 @@ out/
 !**/src/main/kotlin/testing.kt
 !**/.idea/
 !**/src/test/
+.idea/*
 
 ### Eclipse ###
 .apt_generated
