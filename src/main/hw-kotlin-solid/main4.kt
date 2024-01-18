@@ -14,7 +14,7 @@ fun main(args: Array<String>) {
     // производный класс
     val greeting: EmailGreeting = FormalEmailGreeting()
 
-    require(greeting.greeting == "Good evening, sir.") {
+    require(greeting.greeting == "Entities.Good evening, sir.") {
         "Wrong message intro"
     }
 
