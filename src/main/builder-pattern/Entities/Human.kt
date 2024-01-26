@@ -1,6 +1,6 @@
 package Entities
 
-open class Human(var name: String,
+open abstract class Human(var name: String,
                  var role: RoleType,
                  var imageURL: String,
                  var storeName: String,

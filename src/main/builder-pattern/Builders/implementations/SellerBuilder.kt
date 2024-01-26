@@ -3,9 +3,10 @@ package Builders.implementations
 import Builders.IHumanBuilder
 import Entities.Human
 import Entities.RoleType
+import Entities.Seller
 
 class SellerBuilder : IHumanBuilder {
-    private var human: Human = Human()
+    private var human: Human = Seller()
 
     override fun buildName() {
         human.name = "Seller Petya"
@@ -30,7 +31,7 @@ class SellerBuilder : IHumanBuilder {
     }
 
     override fun reset() {
-        human = Human()
+        human = Seller()
     }
 
     override fun getHuman(): Human {

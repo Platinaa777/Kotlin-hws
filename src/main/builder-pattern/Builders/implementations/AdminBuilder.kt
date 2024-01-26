@@ -1,11 +1,12 @@
 package Builders.implementations
 
 import Builders.IHumanBuilder
+import Entities.Admin
 import Entities.Human
 import Entities.RoleType
 
 class AdminBuilder() : IHumanBuilder {
-    private var human: Human = Human()
+    private var human: Human = Admin()
 
     override fun buildName() {
         human.name = "Fedor"
@@ -24,7 +25,7 @@ class AdminBuilder() : IHumanBuilder {
     }
 
     override fun reset() {
-        human = Human()
+        human = Admin()
     }
 
     override fun getHuman(): Human {
