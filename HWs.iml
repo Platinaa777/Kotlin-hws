@@ -12,6 +12,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/builder-pattern" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/proxy-pattern" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/adapter-pattern" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/mediator-pattern" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
